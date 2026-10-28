@@ -1,0 +1,12 @@
+# Generated builds and local research material
+outputs/
+software/colormetric-studio/build-*/
+software/colormetric-studio/tools/wix/
+software/colormetric-studio/tools/wix314-binaries.zip
+*.pips
+*.class
+*.log
+.env
+.env.*
+Thumbs.db
+.DS_Store

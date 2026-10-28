@@ -1,0 +1,350 @@
+ColorMetric Studio 0.1.0 / ImageJ 1.54g
+PASS | ImageJ polygon mask counts
+PASS | Known area fraction 50% [50.0]
+PASS | Native ImageJ white L*=100 [100.0]
+PASS | Native ImageJ black L*=0 [0.0]
+PASS | Primary intensity uses affected pixels only [30.172814063490154]
+PASS | Whole-ROI mean retained as auxiliary only [15.086405378669918]
+PASS | Exclusion removes denominator and numerator
+PASS | Excluded area fraction [33.333333333333336]
+PASS | Overlapping exclusions use union [33.333333333333336]
+PASS | Exclusion extending outside target removes only overlapping target pixels
+PASS | Exclusion outside target and reference does not affect results [50.0]
+PASS | Exclusion removes dark reference pixels without requiring target containment [80.60408020019531]
+PASS | No affected pixels has 0% area and N/A primary intensity
+PASS | No affected pixels exports N/A text and numeric zero area
+PASS | Multiple target regions measured separately
+PASS | Analysis requires no legacy position confirmation
+PASS | Reference and target overlap rejected
+PASS | Out-of-bounds ROI rejected
+PASS | Self-intersecting polygon rejected
+PASS | Image without shared reference rejected
+PASS | Multiple unlinked targets automatically use one shared reference
+PASS | Legacy reference IDs are ignored when one shared reference exists [30.172814063490154]
+PASS | Legacy multiple references require explicit cleanup instead of guessing
+PASS | Brighter-than-reference target has N/A primary, not negative intensity
+PASS | Rigid transfer preserves geometric scale [1.0]
+PASS | Rigid two-point correspondence [0.0]
+PASS | Rigid ROI rotation x [13.0]
+PASS | Rigid ROI rotation y [12.0]
+PASS | ROI transfer preserves reference association
+PASS | Optional scale recorded explicitly [2.0]
+PASS | Strict-size mapping reports residual [20.0]
+PASS | Redness channel identifies known 50% region [50.0]
+PASS | Affected-only redness matches known a* difference [28.708288958475734]
+PASS | Affected-only Brown darkness matches known L* difference [30.172814063490154]
+PASS | Affected intensity averages both detected signal levels [22.454540421805213]
+PASS | Raising threshold excludes weak signal from the primary intensity [30.172814063490154]
+PASS | Threshold changes affected area consistently with its selected pixels
+PASS | Portable project Unicode/XML round trip
+PASS | Original image bytes and SHA256 preserved
+PASS | Saved project reproduces analysis [30.172814063490154]
+PASS | ImageJ ROI decoder compatibility #1
+PASS | ImageJ ROI decoder compatibility #2
+PASS | All region types exported
+PASS | Results and reproducibility manifest exported
+PASS | CSV formula injection escaped
+PASS | External XML entities rejected
+PASS | Four modes x two visits x two regions
+PASS | Inflammation is a separate fourth image mode
+PASS | Device red-area filename is recognized as Inflammation
+PASS | Chinese inflammation filename is recognized
+PASS | English Inflammation and red_area filenames are recognized
+PASS | Inflammation naming does not replace the existing vascular Redness mode
+PASS | Brown and PL filename inference is retained
+PASS | Inflammation uses independent relative-redness parameters with initial threshold 3
+PASS | Inflammation intensity matches affected-pixel a* minus shared-reference a* [28.708288958475734]
+PASS | Inflammation segmentation detects the known 50% affected region [50.0]
+PASS | Inflammation with no detected pixels has N/A intensity and zero area
+PASS | Inflammation honors shared exclusion masks [33.333333333333336]
+PASS | Editing inflammation threshold leaves vascular Redness parameters unchanged
+PASS | Inflammation mode and independent parameters survive project save/reopen
+PASS | Inflammation export has the English mode and numeric affected-only intensity
+PASS | Older three-mode project keeps existing parameters and gains default Inflammation settings
+PASS | GUI shows Inflammation and its saved relative-redness parameters
+PASS | GUI exact transfer copies shared reference and targets and resets verification
+PASS | GUI transfer preserves vertex coordinates [325.0]
+PASS | Position verification checkbox is absent from the UI
+PASS | GUI parameter lock disables editors
+PASS | GUI parameter unlock restores editors
+PASS | GUI polygon closure adds selected ROI role
+PASS | GUI polygon creation invalidates verification
+PASS | English menu and mode labels
+PASS | Ctrl+Z is bound while the drawing canvas has focus
+PASS | Ctrl+Z removes only latest unfinished vertex and preserves completed ROIs
+PASS | Undo is disabled during analysis
+PASS | Repeated undo to empty is safe and does not delete completed ROIs
+PASS | Import picker starts in remembered import directory
+PASS | Latest browsed directory is retained for the next import even without importing files
+PASS | A restarted application reloads the import folder from disk
+PASS | Missing remembered import directory falls back safely
+PASS | Save and Excel export reuse the last browsed output folder even after cancellation
+PASS | Approved output selection shares its actual parent with subsequent project saving
+PASS | Output folder persists across project tabs independently of import navigation
+PASS | A restarted application reloads its shared save/export folder
+PASS | Removed remembered output directory falls back safely
+PASS | Missing history file starts without a stored folder
+PASS | Import and output paths persist to one per-user settings file
+PASS | Chinese folder paths and spaces reload without encoding loss
+PASS | Invalid remembered directory never replaces the last valid one
+PASS | Updating import history retains independent export history
+PASS | Malformed settings fall back safely
+PASS | Unavailable settings storage fails gracefully without blocking file selection
+PASS | A saved folder deleted between runs falls back safely
+PASS | A separate JVM process reloads both saved folder paths
+PASS | Folder address supports Chinese glyphs while labels remain English
+PASS | Folder-address import chooser retains image multi-selection and filtering
+PASS | Enter on quoted Chinese path opens its folder without approving or importing a file
+PASS | Typed path is persisted immediately, before closing the chooser
+PASS | Go button navigates a typed folder path
+PASS | Relative folder paths resolve from the current folder
+PASS | Invalid typed paths show an inline English error and leave the folder unchanged
+PASS | Changing import folders clears stale file selections
+PASS | Mouse-based folder navigation updates the editable folder address
+PASS | Ctrl+L targets the folder address field
+PASS | Typed save folder retains the pips filename and extension
+PASS | Folder navigation preserves a user-edited pips filename before it is committed
+PASS | Typed save folder retains the xlsx filename and extension
+PASS | Folder navigation preserves a user-edited xlsx filename before it is committed
+PASS | Typed save folder retains the zip filename and extension
+PASS | Folder navigation preserves a user-edited zip filename before it is committed
+PASS | Both navigation histories survive app recreation and remain separate
+PASS | Application starts with one project tab
+PASS | New tab has independent project, dirty flag, results and unfinished polygon
+PASS | New tab has independent mode parameters
+PASS | Top tab selection restores correct project, image and selected ROI
+PASS | Tab switching restores only that project's analysis results
+PASS | Tab switching preserves applied and unapplied parameters separately
+PASS | Tab switching preserves unfinished vertices and image view
+PASS | Tab switching preserves unapplied form fields and view options
+PASS | Project audit histories stay independent
+PASS | Saving active tab updates only its file path and dirty state
+PASS | Saving another tab preserves this tab's dirty state and results
+PASS | Separate saved files contain the correct subjects and image visits
+PASS | Save as cannot overwrite a file open in another tab
+PASS | Reopening an already open path focuses its tab without duplicate state
+PASS | Opening a different project adds a tab without replacing existing projects
+PASS | Tab close button closes a saved tab and preserves other projects
+PASS | Analysis blocks switching to a different project
+PASS | Analysis blocks adding a project
+PASS | Drawing a second shared reference is rejected without adding it
+PASS | Rejected reference creation preserves existing ROI and pending vertices
+PASS | Converting a target to a second reference is rejected
+PASS | Rejected role conversion leaves the original target unchanged
+PASS | Results table displays N/A when no affected pixels are found
+PASS | Closing the last tab creates a clean empty project
+PASS | Background analysis starts without confirmation and disables the project tab bar
+PASS | Completed background analysis restores tabs and updates the active project
+PASS | Switching after analysis does not leak results into another project
+PASS | Worker-produced results and unsaved state survive a round trip between tabs
+PASS | Batch copy dialog supports multiple source ROIs and destination images
+PASS | Batch copy selections identify only the requested ROIs and destinations
+PASS | Partial copy retains unrelated destination ROIs and the existing shared reference
+PASS | Each destination receives independent ROI objects and vertex copies
+PASS | Selected ROI copy preserves exact shape, size and original coordinates in all destinations
+PASS | Batch copy invalidates destination verification without modifying source verification
+PASS | Repeating selected copy updates matching IDs without creating duplicate ROIs
+PASS | Copying the shared reference replaces only destination references
+PASS | Empty source ROI selection is rejected
+PASS | Empty destination selection is rejected
+PASS | Copy cannot overwrite its source image
+PASS | Selecting multiple legacy references is rejected before modifying destinations
+PASS | Rejected copies do not alter project history or unrelated destination ROIs
+PASS | Mouse dragging inside an unselected copied ROI selects and translates its entire polygon
+PASS | Whole-ROI drag leaves source, other destination and unrelated ROIs unchanged
+PASS | Whole-ROI drag preserves edge lengths and bounding dimensions
+PASS | ROI translation immediately marks unsaved, invalidates results/verification and records history
+PASS | Whole-ROI translation respects zoom and image offsets
+PASS | Dragging at a small ROI center moves the whole polygon without distorting it
+PASS | Clicking without dragging does not change ROI geometry or audit history
+PASS | ROI dragging is blocked during analysis
+PASS | Dragging a selected vertex handle from outside still supports explicit shape editing
+PASS | Inside boundary-point drag edits only that vertex without snapping it to the initial click
+PASS | Dragging an unselected ROI's nearby vertex selects it and edits the point instead of the whole ROI
+PASS | Vertex priority and displacement respect zoom and pan
+PASS | Boundary-point editing works while zoomed out
+PASS | Hover near a vertex shows the point-edit cursor
+PASS | Hover in the ROI center shows the whole-ROI move cursor
+PASS | Dragging at the large ROI center still preserves all vertex offsets and shape
+PASS | A gesture started on a vertex remains point editing when the pointer crosses the interior
+PASS | A small ROI near-corner drag edits the corner instead of translating the polygon
+PASS | Adaptive vertex tolerance leaves the center of small ROIs available for whole-shape movement
+PASS | The nearest of closely spaced boundary points is edited, not the first point in the polygon
+PASS | Chinese image filename and directory import without renaming
+PASS | Chinese project path and embedded image name round trip
+PASS | UI logical fonts provide Chinese glyph fallback
+PASS | File chooser action labels remain English
+PASS | File chooser discovers Chinese-named images in Chinese directory
+PASS | File chooser component fonts support Chinese user data
+PASS | Actual file list renderer preserves Chinese name with supported glyphs
+PASS | File chooser returns intact Chinese path
+PASS | Sorting retains every region/mode/visit result
+PASS | Each region/mode retains chronological visits: Medial canthus / PL
+PASS | Each region/mode retains chronological visits: Medial canthus / Brown
+PASS | Each region/mode retains chronological visits: Upper eyelid / PL
+PASS | Each region/mode retains chronological visits: Upper eyelid / Brown
+PASS | Region groups stay together across modes
+PASS | Export sorting does not mutate the input result list
+PASS | Visit labels sort numerically with baseline and week aliases
+PASS | Unknown visit remains after recognized visits in its region group
+PASS | Results table puts baseline rows before numbered visits across modes
+PASS | Selecting a sorted result shows its correct image and ROI
+PASS | Current-project export includes only the active tab's displayed results
+PASS | All-open export captures inactive and active results plus the empty project
+PASS | Duplicate project labels are retained and distinguished by project number
+PASS | Batch export preserves inactive project results and table order
+PASS | Current-project export follows tab switching
+PASS | Batch export does not reuse invalidated stale results
+PASS | Existing multi-image import remains enabled without UI changes
+PASS | Import chooser retains its original interface
+PASS | Empty export reports missing results
+PASS | Rejected empty export leaves an existing file unchanged
+PASS | Batch Excel contains a Projects worksheet
+PASS | Excel filter covers dynamic columns and removes obsolete confirmation column
+PASS | ROI-only preview retains native image dimensions
+PASS | ROI-only preview preserves dark and light source pixels without segmentation tint
+PASS | ROI-only preview includes measurement boundaries
+PASS | ROI preview does not mutate original bytes or polygon vertices
+PASS | Result package omits both valid-rois and masks directories
+PASS | Result package includes one source-named ROI-only preview beside each image's ROI files
+PASS | Exported ROI-only PNG has no affected-pixel overlay
+PASS | Analyzed segmentation overlay remains available separately
+PASS | ImageJ ROI geometry files are retained alongside PNG previews
+PASS | Result package README documents source-named ROI-only previews without removed folders
+PASS | Partial result export retains all regions in the represented image
+PASS | Four-mode multi-region export produces one preview per image without duplicates
+PASS | Duplicate source filenames retain every analyzed overlay
+PASS | Duplicate source filenames retain every ROI-only preview
+PASS | Source filename and original extension preserved in both preview folders: 模拟患者_W18_红色区.JPG
+PASS | Source-named preview is a readable image: overlays/模拟患者_W18_红色区.JPG
+PASS | Encoded format matches extension and native dimensions: overlays/模拟患者_W18_红色区.JPG
+PASS | Source-named preview is a readable image: imagej-rois/3e48a05c-6dca-4f7b-849b-e70ee4d2cbd1/模拟患者_W18_红色区.JPG
+PASS | Encoded format matches extension and native dimensions: imagej-rois/3e48a05c-6dca-4f7b-849b-e70ee4d2cbd1/模拟患者_W18_红色区.JPG
+PASS | Source filename and original extension preserved in both preview folders: baseline with spaces.png
+PASS | Source-named preview is a readable image: overlays/baseline with spaces.png
+PASS | Encoded format matches extension and native dimensions: overlays/baseline with spaces.png
+PASS | Source-named preview is a readable image: imagej-rois/812e0524-0740-40c3-b933-78dcd85eb210/baseline with spaces.png
+PASS | Encoded format matches extension and native dimensions: imagej-rois/812e0524-0740-40c3-b933-78dcd85eb210/baseline with spaces.png
+PASS | Source filename and original extension preserved in both preview folders: Week26.棕色.TiF
+PASS | Source-named preview is a readable image: overlays/Week26.棕色.TiF
+PASS | Encoded format matches extension and native dimensions: overlays/Week26.棕色.TiF
+PASS | Source-named preview is a readable image: imagej-rois/36528220-f7e0-432c-9f70-555f9cb51f7f/Week26.棕色.TiF
+PASS | Encoded format matches extension and native dimensions: imagej-rois/36528220-f7e0-432c-9f70-555f9cb51f7f/Week26.棕色.TiF
+PASS | Source filename and original extension preserved in both preview folders: Patient.JPEG
+PASS | Source-named preview is a readable image: overlays/356eee5f-4532-4fa2-9ed5-f0cc48f12345/Patient.JPEG
+PASS | Encoded format matches extension and native dimensions: overlays/356eee5f-4532-4fa2-9ed5-f0cc48f12345/Patient.JPEG
+PASS | Source-named preview is a readable image: imagej-rois/356eee5f-4532-4fa2-9ed5-f0cc48f12345/Patient.JPEG
+PASS | Encoded format matches extension and native dimensions: imagej-rois/356eee5f-4532-4fa2-9ed5-f0cc48f12345/Patient.JPEG
+PASS | Source filename and original extension preserved in both preview folders: patient.jpeg
+PASS | Source-named preview is a readable image: overlays/25ae66ad-64e9-48d6-884f-d3b25256004b/patient.jpeg
+PASS | Encoded format matches extension and native dimensions: overlays/25ae66ad-64e9-48d6-884f-d3b25256004b/patient.jpeg
+PASS | Source-named preview is a readable image: imagej-rois/25ae66ad-64e9-48d6-884f-d3b25256004b/patient.jpeg
+PASS | Encoded format matches extension and native dimensions: imagej-rois/25ae66ad-64e9-48d6-884f-d3b25256004b/patient.jpeg
+PASS | Source filename and original extension preserved in both preview folders: 同名.png
+PASS | Source-named preview is a readable image: overlays/2230bed4-39d0-49f2-afcd-6086cf8142e7/同名.png
+PASS | Encoded format matches extension and native dimensions: overlays/2230bed4-39d0-49f2-afcd-6086cf8142e7/同名.png
+PASS | Source-named preview is a readable image: imagej-rois/2230bed4-39d0-49f2-afcd-6086cf8142e7/同名.png
+PASS | Encoded format matches extension and native dimensions: imagej-rois/2230bed4-39d0-49f2-afcd-6086cf8142e7/同名.png
+PASS | Source filename and original extension preserved in both preview folders: 同名.png
+PASS | Source-named preview is a readable image: overlays/b2ebf1fa-817d-4123-8808-ddeb984b4d4c/同名.png
+PASS | Encoded format matches extension and native dimensions: overlays/b2ebf1fa-817d-4123-8808-ddeb984b4d4c/同名.png
+PASS | Source-named preview is a readable image: imagej-rois/b2ebf1fa-817d-4123-8808-ddeb984b4d4c/同名.png
+PASS | Encoded format matches extension and native dimensions: imagej-rois/b2ebf1fa-817d-4123-8808-ddeb984b4d4c/同名.png
+PASS | Editable ROI files remain complete with source-named previews
+PASS | Manifest retains each original Unicode source filename
+PASS | Preview re-encoding does not change primary intensity [30.172814063490154]
+PASS | Preview re-encoding does not change affected area [50.0]
+PASS | Preview re-encoding never modifies original project image bytes
+PASS | Legacy filenames cannot introduce ZIP path traversal
+PASS | Legacy reserved Windows device names are safe for extraction
+PASS | Missing legacy names get an explicit image filename
+PASS | Original export filenames survive save and reopen
+PASS | Refreshing images preserves a non-first source image selection
+PASS | Copy dialog starts with the requested non-first source and its ROI list
+PASS | Copy dialog can choose an arbitrary source in another project and excludes it from targets
+PASS | Cross-project target selection does not switch the active project
+PASS | Copying to inactive projects preserves the source's results, clean state and geometry
+PASS | Only changed destination projects become dirty and lose cached results
+PASS | Cross-project copy retains unrelated exclusions, one reference and destination parameters
+PASS | Cross-project copies have exact coordinates and independent point objects
+PASS | Editing one destination does not mutate the source or another destination
+PASS | Switching to a changed project refreshes its ROIs and shows invalidated results
+PASS | Copied ROIs and source-project provenance persist after save/reopen
+PASS | One copy can change several other projects while preserving the caller project's cache
+PASS | Foreign destination is rejected before any cross-project changes
+PASS | Rejected multi-target copy leaves destination history unchanged
+PASS | Cross-project copy is blocked while analysis is running
+PASS | Image list has native MOVE drag-and-drop with insertion feedback
+PASS | Dragging a later image before the first updates project order without duplicates
+PASS | Reordering preserves selected image, ROI, copy source, pending vertices, view and unapplied fields
+PASS | Reordering marks the project unsaved while retaining valid analysis results
+PASS | Downward image dragging uses the correct post-removal insertion index
+PASS | Dragging the last image upward restores the intended order
+PASS | Dropping at the same position has no history or order side effects
+PASS | Image reordering is blocked during analysis
+PASS | Non-drop transfers are not accepted as image reordering
+PASS | A drag started in another project cannot move images across projects
+PASS | Dragged image order persists through project save/reopen
+PASS | Visible image list and project order stay synchronized after tab switching
+PASS | Region rows put baseline first then numeric labels, with filename fallback and unknowns last
+PASS | Numeric ordering recognizes labels without a fixed W prefix
+PASS | Excel/CSV row data uses the same expanded numeric ordering
+PASS | Results UI uses baseline-first numeric ordering independently of image-list order
+PASS | One complete whole-ROI drag creates one undo step regardless of mouse frames
+PASS | Ctrl+Z restores the exact pre-movement ROI coordinates
+PASS | Movement undo invalidates measurements, marks unsaved and records history
+PASS | ROI undo preserves other regions and original image bytes
+PASS | A boundary-point gesture creates its own undo step
+PASS | Vertex editing and whole-shape movement share ordered undo history
+PASS | First Ctrl+Z reverses only the most recent whole-ROI move
+PASS | Second Ctrl+Z reverses the preceding boundary-point adjustment
+PASS | Undo selects the correct image and restores its last edited ROI within the project
+PASS | Ctrl+Z in another project cannot undo this project's ROI changes
+PASS | Switching back restores the project's independent undo history
+PASS | ROI undo is blocked while analysis is running
+PASS | A click without movement does not create an undo step
+PASS | Undo refuses stale history after an unrecorded geometry change
+PASS | Copying ROIs clears obsolete edit history for destination images
+PASS | ROI edit history is session-only and is not restored from a project file
+PASS | Pure white uses native ImageJ sRGB white L channel [100.0]
+PASS | White-referenced affected intensity matches known darkness values [34.48232550245487]
+PASS | Pure white needs no drawn reference and records its basis
+PASS | Inactive reference overlapping target cannot alter white measurements [34.48232550245487]
+PASS | White reference retains measurement exclusions and valid denominator
+PASS | White exclusion does not change its constant reference channel [19.395917141617126]
+PASS | White reference channel for PL [100.0]
+PASS | White affected-only metric for PL [32.36989525195167]
+PASS | White reference channel for Redness [0.012450207941161473]
+PASS | White affected-only metric for Redness [34.18950873725964]
+PASS | White reference channel for Brown [100.0]
+PASS | White affected-only metric for Brown [32.36989525195167]
+PASS | White reference channel for Inflammation [0.012450207941161473]
+PASS | White affected-only metric for Inflammation [34.18950873725964]
+PASS | Reference type survives project round trip independently per image
+PASS | White-reference project reproduces analysis [19.395917141617126]
+PASS | Excel and CSV rows identify white reference explicitly
+PASS | Project schema 2 protects white-reference settings from older software
+PASS | Old schema-1 projects default to drawn skin reference
+PASS | New images default to existing skin-reference behavior
+PASS | Reference role automatically supplies read-only reference name
+PASS | Switching to white invalidates results without deleting existing ROIs
+PASS | White mode prevents selecting Reference skin role
+PASS | Drawing or role conversion cannot add a reference in white mode
+PASS | Selecting inactive reference leaves measurement drawing available
+PASS | White checkbox follows the selected image
+PASS | Returning to white image restores its choice and clears the skin-only drawing role
+PASS | Batch copy to white image skips source references and retains its inactive reference
+PASS | Switching back reuses retained skin reference
+PASS | Completed reference polygon always gets default reference name
+PASS | Reference method cannot change while analysis is running
+PASS | ColorMetric Studio release version is 0.1.0
+PASS | Saved metadata identifies ColorMetric Studio 0.1.0
+PASS | Pre-rename project XML roots remain readable
+PASS | Legacy-brand projects retain identical measurements [20.13453905734916]
+PASS | Result ZIP readme carries the new product name and version
+PASS | Renamed application migrates both remembered folders
+PASS | Folder-history migration leaves the old settings untouched
+PASS | Existing ColorMetric folder history is not overwritten by legacy values
+PASS | Window title displays the renamed product and release version
+PASS | Default export filenames use the new product name
+TOTAL: 348 passed

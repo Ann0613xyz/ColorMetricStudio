@@ -1,0 +1,26 @@
+ColorMetric Studio 0.1.0 — bundled components
+
+ImageJ 1.54g, ij.jar
+Project: https://imagej.net/ij/ and https://github.com/imagej/ImageJ
+SHA256: 7355280ff692d343293af1043dd45d437291f4572e3cf3167990a85eab59ac2e
+ImageJ disclaimer is provided in ImageJ-LICENSE.txt.
+ImageJ licensing information: https://imagej.net/licensing/
+Native PolygonRoi masks, ColorSpaceConverter (sRGB / D65),
+FloatProcessor / ImageStatistics, RoiEncoder are used directly.
+No Fiji distribution or third-party registration plugins are bundled.
+
+Microsoft Build of OpenJDK 21.0.7+6-LTS, reduced runtime
+Project: https://www.microsoft.com/openjdk
+License: GPL version 2 with Classpath Exception; accompanying component
+notices are retained in runtime/legal. Runtime build identification is in
+runtime/release. Source and build repository:
+https://github.com/microsoft/openjdk
+The runtime is included; users do not need to install Java separately.
+
+WiX Toolset 3.14.1 was used as a build tool, not as the image-analysis engine.
+https://github.com/wixtoolset/wix3/releases/tag/wix3141rtm
+WiX license and installer-related notices are provided in WiX-LICENSE.txt.
+
+Application source is provided separately in the source archive.
+ImageJ, OpenJDK, and their maintainers do not validate or endorse the
+clinical measurement definitions or exploratory thresholds in this app.
