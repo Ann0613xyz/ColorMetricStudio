@@ -4,7 +4,7 @@ Quantitative color analysis across imaging modes.
 
 ColorMetric Studio is an English-language Windows x64 desktop application for manual polygon ROI measurements in PL, Redness, Brown and Inflammation image exports. Analysis can be applied to any visible skin region. ImageJ 1.54g and a Java runtime are included; users do not install them separately. All processing is local.
 
-The two primary outcomes are relative color intensity among affected pixels and affected area percentage. Read `UserGuide.html` for instructions and `Design.md` for the exact measurement definitions. The default thresholds are exploratory settings, not clinically validated cutoffs.
+The two primary outcomes are relative color intensity among affected pixels and affected area percentage. Read `UserGuide.html` for instructions and `Design.md` for the exact measurement definitions.
 
 ## Current features
 
@@ -12,11 +12,8 @@ The two primary outcomes are relative color intensity among affected pixels and 
 - Multiple project tabs and image-list drag reordering.
 - Multiple polygon measurement ROIs, one shared skin reference or an optional pure-white reference per image, and exclusion ROIs.
 - Any-image and cross-project batch ROI copying. Whole-ROI translation preserves shape and size; nearby vertices take priority when editing boundaries.
-- Ctrl+Z for unfinished points, whole-ROI moves and individual vertex edits.
-- Baseline-first numeric visit sorting in results.
 - Current-project or all-open-project Excel export, plus optional result ZIP packages.
 - ZIP image previews retain imported source filenames, case, Chinese characters and JPG/PNG/TIFF extensions. Duplicate names remain in separate image-ID folders.
-- Independent import and shared save/export folder history persists across restarts. Previous folder settings are migrated automatically on first use when available.
 - Portable `.pips` projects retain original image bytes, ROI coordinates, settings and audit records. Existing schema-1/schema-2 projects remain readable. Reanalyze after opening a project.
 
 ## Release files
@@ -26,8 +23,7 @@ The two primary outcomes are relative color intensity among affected pixels and 
 - `ColorMetricStudio-0.1.0-portable.zip`: extract the entire archive and run `ColorMetric Studio/ColorMetric Studio.exe`.
 - `ColorMetricStudio-0.1.0-source.zip`: current application source and build instructions.
 
-Keep the portable `app` and `runtime` folders together. The release includes only synthetic demonstration images. The product name and release numbering have been reset; the image-analysis engine and algorithm identifier remain unchanged.
-
+Keep the portable `app` and `runtime` folders together.
 ## Build
 
 Requirements: Windows x64, JDK 21 on PATH, bundled `lib/ij.jar`, and WiX 3.14.1 portable binaries in `tools/wix`. The ImageJ and runtime notices must remain with redistributed copies.
@@ -39,7 +35,7 @@ Requirements: Windows x64, JDK 21 on PATH, bundled `lib/ij.jar`, and WiX 3.14.1 
 
 `-Stage image` compiles, runs regression checks and creates `build-0.1.0/app-image/ColorMetric Studio`. `-Stage installer` packages an existing app image. Outputs go to `../../outputs/ColorMetricStudio-0.1.0`. An existing app image is never silently overwritten. Use a fresh build directory for a rebuild.
 
-The Windows display name is `ColorMetric Studio`, version `0.1.0`. The installer uses a new product upgrade identity for this release numbering. Installation does not uninstall a differently named legacy application. Existing projects can be opened directly.
+The Windows display name is `ColorMetric Studio`, version `0.1.0`.
 
 ## Verification
 
