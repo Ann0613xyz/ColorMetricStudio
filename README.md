@@ -23,19 +23,15 @@ Installers are unsigned, so Windows may display an unknown-publisher prompt. Che
 
 ## Main features
 
-- Batch-import JPG, PNG and TIFF images, including Chinese filenames and folder paths.
+- Batch-import JPG, PNG and TIFF images.
 - Work with multiple projects in tabs and organize images by subject, visit and imaging mode.
 - Draw multiple polygon measurement ROIs, one shared reference skin ROI or an optional pure-white reference, and exclusion polygons.
 - Copy selected ROIs between any images, including across open projects; translate polygons without changing their shape or size.
-- Edit boundary points and undo unfinished points, whole-ROI moves and vertex edits with Ctrl+Z.
-- Use optional two-landmark rigid transfer, with explicit optional uniform scaling.
 - Inspect threshold-based segmentation overlays before exporting results.
 - Export current-project or all-open-project results to Excel, or create a result ZIP with measurements, overlays, ROI previews and reproducibility metadata.
 - Save portable `.pips` projects containing original images, ROI geometry, parameters and history.
 
 ![ColorMetric Studio interface using synthetic demonstration images](assets/software-preview.png)
-
-*Actual application interface. The demonstration contains no patient photographs.*
 
 ## Two values per measurement ROI
 
@@ -46,7 +42,7 @@ Installers are unsigned, so Windows may display an unknown-publisher prompt. Che
 
 ImageJ converts RGB to CIELAB under the sRGB/D65 assumption. PL and Brown use reference L* minus pixel L*; Redness and Inflammation use pixel a* minus reference a*. Default exploratory thresholds are 5, 5, 3 and 3 respectively. Keep reference methods and applied parameters consistent across visits, and verify anatomical correspondence after ROI transfer.
 
-These are **image-derived research measurements**, not direct measurements of melanin, hemoglobin, tissue depth or biological inflammation. Area is a percentage, not mm². The software is a research prototype; technical checks do not establish clinical validity. Interpret intensity and area together.
+These are **image-derived research measurements**, not direct measurements of melanin, hemoglobin, tissue depth or biological inflammation. Area is a percentage, not mm².
 
 ## Documentation
 
