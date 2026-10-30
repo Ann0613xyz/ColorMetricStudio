@@ -17,10 +17,8 @@ runtime/release. Source and build repository:
 https://github.com/microsoft/openjdk
 The runtime is included; users do not need to install Java separately.
 
-WiX Toolset 3.14.1 was used as a build tool, not as the image-analysis engine.
+WiX Toolset 3.14.1 was used as a build tool.
 https://github.com/wixtoolset/wix3/releases/tag/wix3141rtm
 WiX license and installer-related notices are provided in WiX-LICENSE.txt.
 
-Application source is provided separately in the source archive.
-ImageJ, OpenJDK, and their maintainers do not validate or endorse the
-clinical measurement definitions or exploratory thresholds in this app.
+All interpretation rights of this software belong to the authors of this repository.
