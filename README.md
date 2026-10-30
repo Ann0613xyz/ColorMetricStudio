@@ -4,7 +4,7 @@
 
 **Quantify color. Track change.**
 
-Offline Windows software for image-derived color intensity and affected-area measurements across **PL, Brown, Redness and Inflammation** image exports. Measurement ROIs can cover **any visible skin region**, not only the periorbital area.
+Offline Windows software for image-derived color intensity and affected-area measurements across **PL, Brown, Redness and Inflammation** spectra-derived image exports. Measurement ROIs can cover **any visible skin region**, not only the periorbital area.
 
 **[Download v0.1.0](https://github.com/Ann0613xyz/ColorMetricStudio/releases/tag/v0.1.0)** · **[User Guide](docs/UserGuide.md)** · **[Measurement methods](docs/Measurement-methods.md)** · **[MIT License](LICENSE.txt)**
 
@@ -75,7 +75,3 @@ Build products are written to `outputs/ColorMetricStudio-0.1.0` at the repositor
 ## License and components
 
 Application code is released under the **MIT License**. ImageJ, the reduced Microsoft OpenJDK runtime and WiX-related components retain their own licenses and notices. Keep these notices with redistributed packages. See [THIRD-PARTY.txt](THIRD-PARTY.txt) and the installed `runtime/legal/` folder.
-
-## Reporting a problem
-
-Open an issue describing the application version, image mode, steps to reproduce and any error message. Use synthetic or appropriately anonymized examples. Do not upload identifiable patient photographs or private `.pips` projects to public issues.
